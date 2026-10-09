@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A student-focused portal to learn about phishing, online scams, and safer digital habits.">
+  <title>Phishing Awareness Portal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/analytics.js" defer></script>
+  <script src="./js/quiz.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark">S</span>
+        <span>Phishing<span class="brand-light">Awareness</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#learn">Learn</a>
+        <a href="#quiz">Take the quiz</a>
+        <a href="#survey">Community survey</a>
+        <a href="#insights">Insights</a>
+      </nav>
+
+      <a class="nav-cta" href="#quiz">Test your awareness ↗</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">DIGITAL SAFETY STARTS WITH A PAUSE</p>
+          <h1>Spot the scam.<br><span>Protect your</span> digital life.</h1>
+          <p class="hero-description">
+            A learning portal to help college students recognise phishing messages,
+            question suspicious links, and make safer choices online.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#learn">Explore safety tips →</a>
+            <a class="button button-secondary" href="#quiz">Try the quick quiz</a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="proof-icon">✓</div>
+            <p><strong>Learn at your own pace</strong><br>
+              <span>No account or personal details required.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="security-card">
+            <div class="security-card-top">
+              <span class="window-dots"><i></i><i></i><i></i></span>
+              <span class="mini-label">MESSAGE CHECK</span>
+            </div>
+
+            <div class="mail-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <rect x="7" y="14" width="50" height="36" rx="7" fill="none" stroke="currentColor" stroke-width="3" />
+                <path d="m10 19 22 17 22-17" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <div class="message-line wide"></div>
+            <div class="message-line"></div>
+
+            <div class="warning-row">
+              <span class="warning-symbol">!</span>
+              <div><strong>Pause before you click</strong><small>Check the sender and link.</small></div>
+            </div>
+
+            <div class="safe-badge">✓ Think. Check. Then act.</div>
+          </div>
+
+          <div class="floating-chip chip-top">✓ Check the source</div>
+          <div class="floating-chip chip-bottom">◆ Stay alert online</div>
+        </div>
+      </div>
+
+      <div class="container hero-bottom">
+        <span>YOUR QUICK GUIDE TO</span>
+        <span class="bottom-rule"></span>
+        <strong>Phishing · Fake offers · Account scams · Online safety</strong>
+      </div>
+    </section>
+
+    <section class="section learn-section" id="learn">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 / LEARN THE WARNING SIGNS</p>
+          <h2>Scams often look ordinary.<br><span>Know what to look for.</span></h2>
+          <p>Fraudulent messages may imitate trusted people or services. Look for patterns, not just spelling mistakes.
+          </p>
+        </div>
+
+        <div class="learn-grid">
+          <article class="learn-card">
+            <div class="card-icon icon-purple">↗</div>
+            <p class="card-kicker">01 — LINKS</p>
+            <h3>Unexpected links</h3>
+            <p>Check the full website address before opening a link. A familiar logo does not prove a message is
+              genuine.</p>
+            <span class="card-tag">Check the destination</span>
+          </article>
+
+          <article class="learn-card">
+            <div class="card-icon icon-orange">!</div>
+            <p class="card-kicker">02 — URGENCY</p>
+            <h3>Pressure to act fast</h3>
+            <p>Threats such as “your account closes today” are designed to make you act before thinking.</p>
+            <span class="card-tag">Pause and verify</span>
+          </article>
+
+          <article class="learn-card">
+            <div class="card-icon icon-green">◇</div>
+            <p class="card-kicker">03 — SECRETS</p>
+            <h3>Requests for sensitive data</h3>
+            <p>Never share passwords, OTPs, or banking PINs in response to a message or unexpected call.</p>
+            <span class="card-tag">Keep credentials private</span>
+          </article>
+
+          <article class="learn-card">
+            <div class="card-icon icon-blue">₹</div>
+            <p class="card-kicker">04 — OFFERS</p>
+            <h3>Deals that feel too good</h3>
+            <p>Unexpected prizes, refunds, jobs, or investment returns may be used to lure people into scams.</p>
+            <span class="card-tag">Verify independently</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section example-section">
+      <div class="container example-grid">
+        <div>
+          <p class="eyebrow">A CLOSER LOOK</p>
+          <h2>Can you spot the<br><span>red flags?</span></h2>
+          <p class="section-intro">This fictional example shows common warning signs. Never use links in suspicious
+            messages to verify a claim.</p>
+          <ul class="check-list">
+            <li>✓ Urgent threat about account access</li>
+            <li>✓ Unexpected request to verify details</li>
+            <li>✓ Link should be checked independently</li>
+          </ul>
+        </div>
+
+        <div class="sample-message">
+          <div class="sample-top">
+            <span class="sample-avatar">!</span>
+            <div><strong>Account Support</strong><small>Example message · not a real alert</small></div>
+          </div>
+
+          <div class="sample-body">
+            <span class="message-label">SIMULATED PHISHING EXAMPLE</span>
+            <p class="sample-text">“Your account will be suspended today. Verify your details immediately to avoid
+              losing access.”</p>
+            <div class="fake-link">verify-account.example.invalid</div>
+
+            <div class="red-flag-note">
+              <span>!</span>
+              <p><strong>Why it looks suspicious</strong><br>
+                It creates urgency and asks you to follow an unexpected verification link. Verify through the official
+                app or website instead.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">02 / PUT YOUR KNOWLEDGE TO THE TEST</p>
+          <h2>Think you can spot a scam?</h2>
+          <p>Answer a few short scenarios. Learn from the explanation after each answer.</p>
+        </div>
+
+        <div class="quiz-shell" id="quiz-shell">
+          <div class="quiz-topline">
+            <span class="quiz-label">SCAM DETECTION QUIZ</span>
+            <span id="quiz-progress-text">Question 1 of 5</span>
+          </div>
+
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+
+          <div id="quiz-content" aria-live="polite">
+            <p class="question-category" id="question-category">MESSAGE CHECK</p>
+            <h3 class="question-text" id="question-text">Loading question…</h3>
+            <div class="answer-list" id="answer-list"></div>
+            <div class="feedback-box" id="feedback-box" hidden></div>
+
+            <div class="quiz-controls">
+              <span class="quiz-hint">Choose the safest response.</span>
+              <button class="button button-primary" id="quiz-action" type="button" disabled>Check answer</button>
+            </div>
+          </div>
+
+          <div class="quiz-result" id="quiz-result" hidden aria-live="polite">
+            <div class="result-medal">✓</div>
+            <p class="eyebrow">QUIZ COMPLETE</p>
+            <h3 id="result-title">Good work!</h3>
+            <p class="result-score" id="result-score">Your score: 0 / 5</p>
+            <p id="result-message">Keep practising safe online habits.</p>
+            <button class="button button-primary" id="restart-quiz" type="button">Try again</button>
+          </div>
+        </div>
+
+        <p class="privacy-note">🔒 Quiz answers are processed in your browser. This demo does not send your quiz answers
+          or personal details to a server.</p>
+      </div>
+    </section>
+
+    <section class="section survey-section" id="survey">
+      <div class="container survey-grid">
+        <div>
+          <p class="eyebrow">03 / HELP US LEARN</p>
+          <h2>Your feedback can<br><span>improve awareness.</span></h2>
+          <p class="section-intro">The short community survey helps us understand awareness of online scams and how
+            useful this learning portal is. Participation is optional.</p>
+
+          <div class="privacy-panel">
+            <span class="privacy-lock">⌑</span>
+            <div>
+              <strong>Privacy first</strong>
+              <p>Please do not enter names, phone numbers, email addresses, passwords, OTPs or other identifying details
+                in the survey.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="survey-card">
+          <div class="survey-card-icon">↗</div>
+          <p class="card-kicker">COMMUNITY QUESTIONNAIRE</p>
+          <h3>Share your feedback</h3>
+          <p>It takes around 2 minutes. Your responses will be reviewed in aggregate for this educational project.</p>
+          <a class="button button-primary button-full" id="survey-link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfsxTWJQVdTaNmbjYEzZB4v2QmFinBYxfOei179tk80ke9cBA/viewform"
+            target="_blank" rel="noopener">Open anonymous survey ↗</a>
+          <p class="survey-status" id="survey-status">Google Forms community survey</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section insights-section" id="insights">
+      <div class="container">
+        <div class="section-heading insights-heading">
+          <p class="eyebrow">04 / COMMUNITY INSIGHTS</p>
+          <h2>What the responses tell us</h2>
+          <p>These charts display the response counts entered for each of the 10 community survey questions. Percentages
+            are calculated automatically.</p>
+        </div>
+
+        <div class="insight-banner">
+          <span class="insight-banner-icon">i</span>
+          <p><strong>Data status:</strong> <span id="data-status">Waiting for survey data.</span></p>
+        </div>
+
+        <div class="charts-grid" id="charts-grid"></div>
+
+        <!-- <p class="analysis-note">
+          Enter actual Google Forms answer counts in <code>js/analytics.js</code>.
+          Do not present placeholder counts as real survey findings.
+        </p> -->
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="container closing-inner">
+        <div>
+          <p class="eyebrow">A SMALL PAUSE MAKES A DIFFERENCE</p>
+          <h2>When in doubt, verify<br>before you click.</h2>
+        </div>
+        <a class="button button-light" href="#learn">Review the safety tips ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark">S</span>
+        <span>Phishing<span class="brand-light">Awareness</span></span>
+      </a>
+      <p>Educational project · Phishing and Online Scam Awareness Portal</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>Made for community digital-safety awareness.</span>
+      <span>Educational information only. Verify through official channels.</span>
+    </div>
+  </footer>
+</body>
+
+</html>
